@@ -1,7 +1,7 @@
 package org.example;
 
 public class Constants {
-    public static String ANNETTE_RIOT_KEY = "RGAPI-d2988c3f-e67b-4511-93a3-22332c46933f";
+    public static String ANNETTE_RIOT_KEY = "YOUR-API-KEY-HERE";
 
     // API URLS
     public static String ACCOUNTV1_BYRIOTID_LINK = "https://europe.api.riotgames.com/riot/account/v1/accounts/by-riot-id/";
