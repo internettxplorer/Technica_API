@@ -11,9 +11,17 @@ public class Summoner {
     private String tagLine;
     private int summonerLevel;
 
-    public String getPuuid() {
-        return puuid;
+    // initialise class with empty values, populated later through the API
+    public Summoner() {
+        puuid = "";
+        accountId = "";
+        summonerId = "";
+        gameName = "";
+        tagLine = "";
+        summonerLevel = 0;
     }
+
+    public String getPuuid() { return puuid; }
 
     public void setPuuid(String puuid) {
         this.puuid = puuid;
@@ -27,7 +35,7 @@ public class Summoner {
         this.summonerId = summonerId;
     }
 
-    public Summoner() {}
+
 
     @Override
     public String toString() {
