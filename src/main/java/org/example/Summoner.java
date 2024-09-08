@@ -15,6 +15,9 @@ public class Summoner {
     private int profileIconId;
     private long revisionDate;
 
+    @JsonIgnore
+    private String region;
+
     public Summoner() {}
 
     public String getPuuid() { return puuid; }
@@ -40,6 +43,11 @@ public class Summoner {
 
     public long getRevisionDate() { return revisionDate; }
     public void setRevisionDate(long revisionDate) { this.revisionDate = revisionDate; }
+
+    @JsonIgnore
+    public String getRegion() { return region; }
+    @JsonIgnore
+    public void setRegion(String region) { this.region = region;  }
 
     @Override
     public String toString() {

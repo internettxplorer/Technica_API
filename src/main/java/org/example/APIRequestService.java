@@ -44,7 +44,7 @@ public class APIRequestService {
      * Query user for Riot username and tagline to search.
      * @return URL formatted with inputted username and tagline
      */
-    public static String buildQueryURL() {
+    public static String buildAccountQueryURL() {
         String url;
         String username;
         String tagline;
@@ -63,6 +63,17 @@ public class APIRequestService {
         return url;
     }
 
+//    public static String buildSummonerQueryURL() {
+//        String url;
+//        String region;
+//
+//        Scanner scanner = new Scanner(System.in);
+//
+//        // Query user for region
+//
+//        // Store region in Summoner class?
+//    }
+
     /**
      * Get a player's PUUID, in-game name, and tagline based on user input.
      * @param summoner Summoner instance to insert API response body into
@@ -71,7 +82,7 @@ public class APIRequestService {
         String formattedJson;
 
         // query user for RiotID and send GET request to API
-        String url = buildQueryURL();
+        String url = buildAccountQueryURL();
         String json = sendGetRequest(url);
 
         // remove curly braces from json

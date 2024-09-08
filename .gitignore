@@ -37,4 +37,5 @@ build/
 .vscode/
 
 ### Mac OS ###
-.DS_Store
+.DS_Store!/src/main/java/org/example/Constants.java
+!/src/main/java/org/example/Constants.java
