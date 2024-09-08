@@ -1,11 +1,11 @@
 package org.example;
 
 public class Constants {
-    public static String ANNETTE_RIOT_KEY = "RGAPI-25625b4b-67b9-4a06-bfa5-23358028c447";
+    public static String ANNETTE_RIOT_KEY = "API-KEY";
 
     // API URLS
-    public static String ACCOUNTV1_BYRIOTID_LINK = "https://asia.api.riotgames.com/riot/account/v1/accounts/by-riot-id/Agurin/EUW";
-    public static String SUMMONERV4_BYPUUID_LINK = "https://euw1.api.riotgames.com/lol/summoner/v4/summoners/by-puuid/";
+    public static String ACCOUNTV1_BYRIOTID_LINK = "https://asia.api.riotgames.com/riot/account/v1/accounts/by-riot-id/";
+    public static String SUMMONERV4_BYPUUID_LINK = ".api.riotgames.com/lol/summoner/v4/summoners/by-puuid/";
 
     public static String region = "oc1";
     public static String FRAGMENT = "https://" + region + ".riotgames.com/lol/summoner/v4/summoners/by-puuid/";

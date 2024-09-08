@@ -63,16 +63,12 @@ public class APIRequestService {
         return url;
     }
 
-//    public static String buildSummonerQueryURL() {
-//        String url;
-//        String region;
-//
-//        Scanner scanner = new Scanner(System.in);
-//
-//        // Query user for region
-//
-//        // Store region in Summoner class?
-//    }
+    public static String buildSummonerQueryURL(Summoner s) {
+        String region = s.getRegion();
+        String puuid = s.getPuuid();
+
+        return "https://" + region + Constants.SUMMONERV4_BYPUUID_LINK + puuid;
+    }
 
     /**
      * Get a player's PUUID, in-game name, and tagline based on user input.
@@ -98,8 +94,7 @@ public class APIRequestService {
      */
     public static void getSummonerInfoByPUUID(Summoner summoner) throws IOException {
         // Build API request url from base link and summoner PUUID
-        String puuid = summoner.getPuuid();
-        String url = Constants.SUMMONERV4_BYPUUID_LINK + puuid;
+        String url = buildSummonerQueryURL(summoner);
         String formattedJson;
 
         String json = sendGetRequest(url);
